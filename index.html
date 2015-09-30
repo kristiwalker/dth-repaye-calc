@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>REPAYE loan calculator</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+
+<body>
+
+  <div>
+    <!--Inputs for user to input income, interest rate and loan amount-->
+    <p id="income-text">Annual income</p>
+    <b id="sign1">$</b>
+    <input id="income" type="text" placeholder="40000"/><br><br>
+    
+    <p id="loan-text">Loan amount</p>
+    
+    <b id="sign2">$</b>
+    <input id="loan" type="text" placeholder="25000"/><br><br>
+      
+    <p id="interest-text">Interest rate</p>
+    <input id="interest" type="text" placeholder="6"/>
+    
+    <b id="sign3">%</b>
+    <br><br>
+    
+    <!--Button to caculate montly payments, amount to be paid, amount that will be forgiven, and comparison with UNC students-->
+ 
+<!--BUTTON-->
+    <input type="button" onclick="calc()" id = "calc" value="calculate"/>
+
+<!--OUTPUT TEXT, OUTPUT, AVG PAYMENT-->
+
+    <!--Payment output text-->
+    <p id="paymentText"></p>
+    <!--Payment output-->
+    <p id="payment"></p>
+    <p id="avgPayment"></p>
+    <!--Payment average payment-->
+    
+    <!--allPay output text-->
+    <p id="allPayText"></p>
+    <!--allPay output-->
+    <p id="allPay"></p>
+    
+    <!--leftover output text-->
+    <p id="leftoverText"></p>
+    <!--leftover output-->
+    <p id="leftover"></p>
+    
+  </div>
+  
+
+</body>
+</html>
